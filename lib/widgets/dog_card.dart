@@ -18,6 +18,7 @@ class DogCard extends StatelessWidget {
         ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 18),
+      margin: const EdgeInsets.only(right: 10),
       // Text In card
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -96,7 +97,7 @@ class DogCard extends StatelessWidget {
                 child: Image.asset(
                   "assets/icons/dog.png",
                 ),
-              )
+              ),
             ],
           )
         ],

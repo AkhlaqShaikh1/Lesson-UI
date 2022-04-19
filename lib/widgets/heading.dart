@@ -8,30 +8,32 @@ class Heading extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          "Let's Start!",
-          style: TextStyle(
-            fontFamily: GoogleFonts.secularOne().fontFamily,
-            fontSize: 45,
-            fontWeight: FontWeight.w800,
+    return Center(
+      child: Column(
+        children: [
+          Text(
+            "Let's Start!",
+            style: TextStyle(
+              fontFamily: GoogleFonts.secularOne().fontFamily,
+              fontSize: 45,
+              fontWeight: FontWeight.w800,
+            ),
           ),
-        ),
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 15),
-          child: Text(
-            "More than 200 lessons on different \ntopics are available for you!",
-            textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.subtitle1?.copyWith(
-                  fontFamily: GoogleFonts.secularOne().fontFamily,
-                  color: Colors.grey[400],
-                  fontWeight: FontWeight.w100,
-                  fontSize: 20,
-                ),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 15),
+            child: Text(
+              "More than 200 lessons on different \ntopics are available for you!",
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.subtitle1?.copyWith(
+                    fontFamily: GoogleFonts.secularOne().fontFamily,
+                    color: Colors.grey[400],
+                    fontWeight: FontWeight.w100,
+                    fontSize: 20,
+                  ),
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
